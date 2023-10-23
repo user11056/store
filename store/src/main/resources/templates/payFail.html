@@ -93,48 +93,40 @@
 			<div class="col-md-offset-1 col-md-10">
 				<div class="col-md-4">
 					<div class="col-md-12 order-bar-undo">
-						1. 注文情報の確認
-						<span class="pull-right"><span class="fa fa-chevron-right"></span></span>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="col-md-12 order-bar-active">
-						2. お支払方法の確認
+						1.确认订单信息
 						<span class="pull-right"><span class="fa fa-chevron-right"></span></span>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="col-md-12 order-bar-undo">
-						3. 注文完了
+						2.在线支付
+						<span class="pull-right"><span class="fa fa-chevron-right"></span></span>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="col-md-12 order-bar-active">
+						3.付款成功
 					</div>
 				</div>
 				<div class="col-md-12">
 					<form role="form">
 						<div class="form-group">
 							<label for="name">
-								<p>お支払い方法を選択：</p>
+								<p>支付结果：</p>
 							</label>
-							<div class="text-center">
-								<label class="radio-inline">
-									<input type="radio" name="optionsRadios" id="optionsRadios1" checked="checked"> 支付宝
-								</label>
-								<label class="radio-inline">
-									<input type="radio" name="optionsRadios" id="optionsRadios2"> 微信
-								</label>
-								<label class="radio-inline">
-									<input type="radio" name="optionsRadios" id="optionsRadios3"> 网银
-								</label>
-								<label class="radio-inline">
-									<input type="radio" name="optionsRadios" id="optionsRadios4"> 货到付款
-								</label>
+							<div>订单号：1101000301，支付金额¥5298，收款方圆心电脑商城</div>
+							<hr/>
+							<div class="text-center pay-res">
+								<span class="fa fa-times-rectangle-o pay-res-icon"></span>支付失败
 							</div>
-						</div>
-						<div>注文番号：1101000301，支付金額¥5298，收款方圆心电脑商城</div>
-						<div class="pay-bar">
-							<a href="cart.html">カートに戻る</a>
-							<span id="total-value" class="pull-right">¥5298.00 <input type="button" value="お支払い" class="btn btn-primary btn-lg link-success"/></span>
-						</div>
+							<div class="text-center">
+								圆心电脑商城不会以系统异常、订单升级为由，要求你点击任何链接进行退款操作
+							</div>
+							<div class="pay-bar">
+								<a href="index.html">返回</a>
+							</div>
 					</form>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -222,14 +214,6 @@
 				Copyright © 2022 dnsc.cn All Rights Reserved 京ICP备08963888号-45 <a target="_blank" href="http://www.dnsc.cn/">圆心科技集团有限公司</a> 版权所有
 			</div>
 		</footer>
-		<script type="text/javascript">
-			$(document).ready(function () {
-				totalValue();
-			});
-		function totalValue(){
-			
-		}
-		</script>
 		<!--页脚结束-->
 	</body>
 
