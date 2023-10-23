@@ -93,31 +93,34 @@
 			<div class="col-md-offset-1 col-md-10">
 				<div class="col-md-4">
 					<div class="col-md-12 order-bar-undo">
-						1.确认订单信息
+						1. 注文情報の確認
 						<span class="pull-right"><span class="fa fa-chevron-right"></span></span>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="col-md-12 order-bar-undo">
-						2.在线支付
+						2. お支払方法の確認
 						<span class="pull-right"><span class="fa fa-chevron-right"></span></span>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="col-md-12 order-bar-active">
-						3.付款成功
+						3. 注文完了
 					</div>
 				</div>
 				<div class="col-md-12">
 					<form role="form">
 						<div class="form-group">
 							<label for="name">
-								<p>支付结果：</p>
+								<p>お支払い結果：</p>
 							</label>
-							<div>订单号：1101000301，支付金额¥5298，收款方圆心电脑商城</div>
+							<div>注文番号：1101000301，お支払い金額¥5298，様</div>
+<!--							<div th:object="${order}">-->
+<!--								注文番号:<span th:text="*{oid}"></span>，お支払い金額:¥<span th:text="*{totalPrice}"></span>，<span th:text="*{recvName}"></span>様-->
+<!--							</div>-->
 							<hr/>
 							<div class="text-center pay-res">
-								<span class="fa fa-check-square-o pay-res-icon"></span>支付成功
+								<span class="fa fa-check-square-o pay-res-icon"></span>お支払い完了
 							</div>
 							<div class="text-center">
 								圆心电脑商城不会以系统异常、订单升级为由，要求你点击任何链接进行退款操作
