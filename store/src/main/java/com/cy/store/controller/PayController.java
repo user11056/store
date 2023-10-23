@@ -3,6 +3,7 @@ package com.cy.store.controller;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,7 +18,7 @@ public class PayController extends BaseController {
     @Autowired
     private IOrderService orderService;
 
-    @RequestMapping("/")
+    @PostMapping("/")
     public JsonResult<Order> create(Integer oid,HttpSession session) {
         // 从Session中取出uid和username
         Integer uid = getUidFromSession(session);
